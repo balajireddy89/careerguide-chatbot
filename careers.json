@@ -1,0 +1,164 @@
+[
+  {
+    "career": "Software Developer",
+    "description": "Designs, develops, tests, and maintains application software for various platforms and user needs.",
+    "skills": ["Problem Solving", "Data Structures & Algorithms", "Object-Oriented Programming", "Git & Version Control", "Software Architecture"],
+    "languages": ["Java", "Python", "C++", "C#"],
+    "technologies": ["Git", "IDE tools (VS Code/PyCharm)", "Testing Frameworks (PyTest/JUnit)", "CI/CD Basics"],
+    "roadmap": [
+      "Master one programming language (e.g., Python or Java)",
+      "Understand Data Structures & Algorithms",
+      "Learn OOP principles and design patterns",
+      "Get familiar with Git and GitHub",
+      "Build desktop or web applications"
+    ],
+    "jobRoles": ["Junior Software Engineer", "Software Developer", "Application Developer", "Systems Software Engineer"],
+    "projects": ["Task Management App", "Student Grade Calculator", "Personal Inventory Management System"]
+  },
+  {
+    "career": "Python Developer",
+    "description": "Builds web applications, automation scripts, backend APIs, and data integrations using Python.",
+    "skills": ["Python Fundamentals", "Data Structures", "Web Frameworks (FastAPI/Django)", "REST APIs", "SQL & NoSQL"],
+    "languages": ["Python", "SQL"],
+    "technologies": ["FastAPI", "Django", "Flask", "PostgreSQL", "Docker", "Celery"],
+    "roadmap": [
+      "Learn Python basics and syntax",
+      "Understand OOP and Python modules",
+      "Learn HTML/CSS and basic web concepts",
+      "Master FastAPI or Django framework",
+      "Work with databases and ORMs",
+      "Deploy Python applications"
+    ],
+    "jobRoles": ["Python Engineer", "Django Developer", "FastAPI Developer", "Backend Developer", "Automation Developer"],
+    "projects": ["URL Shortener Service", "Blog API with FastAPI", "Web Scraping & Alert Bot"]
+  },
+  {
+    "career": "Java Backend Developer",
+    "description": "Develops enterprise server-side applications, microservices, and APIs using Java and modern frameworks.",
+    "skills": ["Core Java", "OOP Concepts", "Data Structures & Algorithms", "SQL & Relational Databases", "Spring Boot", "RESTful API Design"],
+    "languages": ["Java", "SQL"],
+    "technologies": ["Spring Boot", "Spring Data JPA", "Hibernate", "PostgreSQL/MySQL", "Maven", "Postman", "Docker"],
+    "roadmap": [
+      "Learn Core Java fundamentals & OOP",
+      "Practice Data Structures & Algorithms",
+      "Learn SQL and Relational Database Design",
+      "Master Spring Boot framework & REST API creation",
+      "Learn JPA / Hibernate for database integration",
+      "Build production-ready backend services"
+    ],
+    "jobRoles": ["Java Developer", "Backend Engineer", "Spring Boot Developer", "Java API Engineer"],
+    "projects": ["Online Banking REST API", "E-Commerce Backend Service", "Library Management System API"]
+  },
+  {
+    "career": "Web Developer",
+    "description": "Creates responsive web interfaces and full-stack web applications for internet browsers.",
+    "skills": ["HTML5 & CSS3", "JavaScript (ES6+)", "Responsive Design", "Frontend Frameworks", "API Integration"],
+    "languages": ["HTML", "CSS", "JavaScript", "TypeScript"],
+    "technologies": ["React", "Vue.js", "Node.js", "Express", "Tailwind CSS/Bootstrap", "Git"],
+    "roadmap": [
+      "Learn HTML, CSS, and Responsive Layouts",
+      "Master Modern JavaScript (DOM manipulation, async/await)",
+      "Understand Git version control",
+      "Learn a frontend framework (React/Vue)",
+      "Connect frontend to backend REST APIs"
+    ],
+    "jobRoles": ["Frontend Developer", "Full Stack Web Developer", "Web Application Developer"],
+    "projects": ["Personal Portfolio Website", "Weather Dashboard with Live API", "E-Commerce Shopping Cart"]
+  },
+  {
+    "career": "Data Analyst",
+    "description": "Inspects, cleans, transforms, and models data to uncover valuable business insights and decision drivers.",
+    "skills": ["Data Wrangling", "SQL Querying", "Statistical Analysis", "Data Visualization", "Business Acumen"],
+    "languages": ["SQL", "Python", "R"],
+    "technologies": ["Pandas", "NumPy", "Matplotlib/Seaborn", "Power BI", "Tableau", "Excel"],
+    "roadmap": [
+      "Master Excel (VLOOKUP, Pivot Tables)",
+      "Learn SQL for querying databases",
+      "Learn Python for data analysis (Pandas & NumPy)",
+      "Master Data Visualization tools (Power BI / Tableau)",
+      "Analyze real datasets and build dashboards"
+    ],
+    "jobRoles": ["Data Analyst", "Business Intelligence Analyst", "Product Analyst", "Data Operations Specialist"],
+    "projects": ["Sales Performance Dashboard", "Customer Churn Analysis", "Global COVID Data Visualizer"]
+  },
+  {
+    "career": "Data Scientist",
+    "description": "Combines math, statistics, programming, and domain knowledge to extract actionable insight and predictive models from data.",
+    "skills": ["Advanced Statistics", "Machine Learning", "Exploratory Data Analysis", "Feature Engineering", "Data Pipelines"],
+    "languages": ["Python", "R", "SQL"],
+    "technologies": ["Pandas", "Scikit-Learn", "TensorFlow/PyTorch", "Jupyter", "Spark"],
+    "roadmap": [
+      "Learn Python for Data Science & Math (Linear Algebra, Probabilities)",
+      "Master Data Manipulation with Pandas & NumPy",
+      "Learn Machine Learning algorithms with Scikit-Learn",
+      "Build predictive models and evaluate metrics",
+      "Deploy models via web APIs"
+    ],
+    "jobRoles": ["Data Scientist", "Predictive Analytics Specialist", "Machine Learning Analyst"],
+    "projects": ["House Price Prediction Model", "Customer Segmentation Analysis", "Spam Email Classifier"]
+  },
+  {
+    "career": "AI/ML Engineer",
+    "description": "Researches, builds, and deploys Artificial Intelligence models, Large Language Models (LLMs), and deep neural networks.",
+    "skills": ["Deep Learning", "Neural Networks", "NLP & Computer Vision", "Model Deployment", "Prompt Engineering"],
+    "languages": ["Python", "C++"],
+    "technologies": ["PyTorch", "TensorFlow", "Hugging Face", "LangChain/LlamaIndex", "OpenAI APIs", "Docker"],
+    "roadmap": [
+      "Learn Python & Data Structures",
+      "Understand Machine Learning & Deep Learning concepts",
+      "Master PyTorch or TensorFlow",
+      "Study Natural Language Processing (NLP) & LLMs",
+      "Learn how to serve AI models via REST APIs"
+    ],
+    "jobRoles": ["AI Engineer", "Machine Learning Engineer", "NLP Specialist", "LLM Engineer"],
+    "projects": ["AI Chatbot with OpenAI/LangChain", "Image Recognition Model", "Text Summarizer Web Tool"]
+  },
+  {
+    "career": "Cybersecurity Engineer",
+    "description": "Protects computer systems, networks, and data from cyber threats, unauthorized access, and vulnerabilities.",
+    "skills": ["Network Security", "Ethical Hacking", "Vulnerability Assessment", "Cryptography", "Security Compliance"],
+    "languages": ["Python", "Bash", "C"],
+    "technologies": ["Wireshark", "Metasploit", "Nmap", "Linux (Kali)", "Firewalls", "SIEM Tools"],
+    "roadmap": [
+      "Learn Computer Networking (TCP/IP, DNS, Firewalls)",
+      "Understand Linux Operating System & Command Line",
+      "Learn Python/Bash scripting for security automation",
+      "Study web security fundamentals (OWASP Top 10)",
+      "Practice hands-on penetration testing and ethical hacking"
+    ],
+    "jobRoles": ["Cybersecurity Analyst", "Security Engineer", "Ethical Hacker / Penetration Tester", "SOC Analyst"],
+    "projects": ["Port Scanner Tool in Python", "Network Vulnerability Scanner", "Log Analyzer & Intrusion Detector"]
+  },
+  {
+    "career": "Cloud Engineer",
+    "description": "Architects, deploys, and manages infrastructure and cloud-native applications on cloud platforms.",
+    "skills": ["Cloud Architecture", "Infrastructure as Code", "Containerization", "CI/CD Pipelines", "Linux System Admin"],
+    "languages": ["Python", "Bash", "YAML", "HCL (Terraform)"],
+    "technologies": ["AWS / Azure / GCP", "Docker", "Kubernetes", "Terraform", "GitHub Actions"],
+    "roadmap": [
+      "Learn Linux Administration & Networking",
+      "Choose a Cloud Provider (AWS/Azure/GCP) and earn a foundational cert",
+      "Master Docker containerization",
+      "Learn Infrastructure as Code with Terraform",
+      "Build CI/CD pipelines to deploy cloud resources automatically"
+    ],
+    "jobRoles": ["Cloud Engineer", "DevOps Engineer", "Cloud Infrastructure Developer", "Site Reliability Engineer (SRE)"],
+    "projects": ["AWS Auto-Scaling Web App", "Dockerized Microservice Deployment", "Terraform Cloud Infra Pipeline"]
+  },
+  {
+    "career": "UI/UX Designer",
+    "description": "Designs intuitive, attractive, and accessible user interfaces and experiences for websites and software applications.",
+    "skills": ["User Research", "Wireframing & Prototyping", "Visual Design", "Design Systems", "Usability Testing"],
+    "languages": ["HTML/CSS (Basic understanding)"],
+    "technologies": ["Figma", "Adobe XD", "Miro", "Balsamiq"],
+    "roadmap": [
+      "Learn fundamental Design Principles (Typography, Color Theory, Layout)",
+      "Master Figma for UI design and prototyping",
+      "Understand User Experience (UX) research methods and wireframing",
+      "Create interactive UI prototypes and test with users",
+      "Build a portfolio showcasing design case studies"
+    ],
+    "jobRoles": ["UI Designer", "UX Designer", "Product Designer", "Interaction Designer"],
+    "projects": ["Mobile Banking App UI Concept", "E-Learning Platform Redesign", "Design System Component Library"]
+  }
+]
