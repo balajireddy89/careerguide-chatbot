@@ -57,16 +57,16 @@ CareerGuide-AI/
 
 ## 🔑 Environment Configuration
 
-Create a `.env` file in the project root directory (or use the included `.env`):
+Create a `.env` file in the project root directory (refer to `.env.example`):
 
 ```ini
 # Primary AI Model Configuration (Groq)
-PRIMARY_API_KEY=gsk_your_groq_api_key
+PRIMARY_API_KEY=your_groq_api_key_here
 PRIMARY_BASE_URL=https://api.groq.com/openai/v1
 PRIMARY_MODEL_NAME=openai/gpt-oss-20b
 
 # Fallback AI Model Configuration (SambaNova)
-FALLBACK_API_KEY=your_sambanova_api_key
+FALLBACK_API_KEY=your_sambanova_api_key_here
 FALLBACK_BASE_URL=https://api.sambanova.ai/v1
 FALLBACK_MODEL_NAME=Meta-Llama-3.3-70B-Instruct
 
