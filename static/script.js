@@ -13,16 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Modal listeners
-    const infoBtn = document.getElementById('infoBtn');
-    const closeModal = document.getElementById('closeModal');
-    const aboutModal = document.getElementById('aboutModal');
-
-    infoBtn.addEventListener('click', () => aboutModal.classList.add('open'));
-    closeModal.addEventListener('click', () => aboutModal.classList.remove('open'));
-    aboutModal.addEventListener('click', (e) => {
-        if (e.target === aboutModal) aboutModal.classList.remove('open');
-    });
+    // Suggested chips initialized
 });
 
 async function sendMessage() {
@@ -38,13 +29,17 @@ async function sendMessage() {
     sendBtn.disabled = true;
 
     // Render User Message Bubble
-    appendUserBubble(userMessage);
+    const userBubble = appendUserBubble(userMessage);
 
     // Show Thinking Indicator
     showLoading(true);
 
     try {
-        const response = await fetch('/api/chat', {
+        const apiUrl = window.location.origin === 'null' || window.location.protocol === 'file:' 
+            ? 'http://localhost:8080/api/chat' 
+            : '/api/chat';
+
+        const response = await fetch(apiUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -72,6 +67,10 @@ async function sendMessage() {
         showLoading(false);
         appendBotBubble("Sorry, I'm unable to connect to the AI service right now. Please check your backend connection.", "error", false);
     } finally {
+        // Navigate to the current prompt user entered so they can read from top and scroll manually
+        scrollToPrompt(userBubble);
+        setTimeout(() => scrollToPrompt(userBubble), 60);
+
         inputElement.disabled = false;
         sendBtn.disabled = false;
         inputElement.focus();
@@ -93,7 +92,8 @@ function appendUserBubble(text) {
     `;
 
     chatContainer.appendChild(wrapper);
-    scrollToBottom();
+    scrollToPrompt(wrapper);
+    return wrapper;
 }
 
 function appendBotBubble(text, model, fallbackUsed) {
@@ -121,7 +121,7 @@ function appendBotBubble(text, model, fallbackUsed) {
     `;
 
     chatContainer.appendChild(wrapper);
-    scrollToBottom();
+    return wrapper;
 }
 
 function showLoading(active) {
@@ -131,12 +131,19 @@ function showLoading(active) {
     } else {
         indicator.classList.remove('active');
     }
-    scrollToBottom();
 }
 
-function scrollToBottom() {
+function scrollToPrompt(element) {
+    if (!element) return;
     const chatContainer = document.getElementById('chatContainer');
-    chatContainer.scrollTop = chatContainer.scrollHeight;
+    const containerRect = chatContainer.getBoundingClientRect();
+    const elementRect = element.getBoundingClientRect();
+    const targetScrollTop = (elementRect.top - containerRect.top) + chatContainer.scrollTop - 12;
+
+    chatContainer.scrollTo({
+        top: Math.max(0, targetScrollTop),
+        behavior: 'smooth'
+    });
 }
 
 function escapeHtml(str) {
